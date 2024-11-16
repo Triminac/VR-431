@@ -1,9 +1,9 @@
 const images = [
-    "/images/image1.png",
-    "/images/image2.png",
-    "/images/image3.png",
-    "/images/image4.png",
-    "/images/image5.png",
+    "/assets/image1.png",
+    "/assets/image2.png",
+    "/assets/image3.png",
+    "/assets/image4.png",
+    "/assets/image5.png",
     // "/images/image6.png",
     // "/images/image7.png",
     // "/images/image8.png",
@@ -79,9 +79,9 @@ updateImage(currentIndex);
 
 // Medical reference gallery images
 const medicalImages = [
-  "/medical reference/pg177.jpg",
-  "/medical reference/pg178.jpg",
-  "/medical reference/pg179.jpg",
+  "/assets/pg177.jpg",
+  "/assets/pg178.jpg",
+  "/assets/pg179.jpg",
   // "/medical reference/pg180.jpg",
   // "/medical reference/pg181.jpg",
   // "/medical reference/pg182.jpg",
