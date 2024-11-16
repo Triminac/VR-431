@@ -54,7 +54,7 @@ const images = [
   const nextButton = document.getElementById("next");
   const galleryCaption = document.getElementById("gallery-caption");
 
-  // Function to update the displayed image
+  // Function to update the displayed image for the first gallery
   function updateImage(index) {
     galleryImage.src = images[index];
     galleryImage.alt = `Storyboard Frame ${index + 1}`;
@@ -72,5 +72,69 @@ const images = [
     updateImage(currentIndex);
   });
   
-  // Initialize the gallery
+  // Initialize the first gallery
 updateImage(currentIndex);
+
+// --- New Code for the Medical Reference Gallery ---
+
+// Medical reference gallery images
+const medicalImages = [
+  "/medical reference/pg178.jpg",
+  "/medical reference/pg179.jpg",
+  "/medical reference/pg180.jpg",
+  "/medical reference/pg181.jpg",
+  "/medical reference/pg182.jpg",
+  "/medical reference/pg183.jpg",
+  "/medical reference/pg184.jpg",
+  "/medical reference/pg185.jpg",
+  "/medical reference/pg186.jpg",
+  "/medical reference/pg187.jpg",
+  "/medical reference/pg188.jpg",
+  "/medical reference/pg189.jpg",
+  "/medical reference/pg190.jpg",
+  "/medical reference/pg191.jpg",
+  "/medical reference/PPH12.jpg",
+  "/medical reference/PPH14.jpg",
+  "/medical reference/PPH180.jpg",
+  "/medical reference/PPH181.jpg",
+  "/medical reference/PPH182.jpg",
+  "/medical reference/PPH183.jpg",
+  "/medical reference/PPH184.jpg",
+  "/medical reference/PPH185.jpg",
+  "/medical reference/PPH186.jpg",
+  "/medical reference/PPH187.jpg",
+  "/medical reference/PPH188.jpg",
+  "/medical reference/PPH189.jpg",
+  "/medical reference/PPH190.jpg",
+  "/medical reference/PPH191.jpg",
+  "/medical reference/PPH192.jpg",
+  "/medical reference/PPH188z.jpg",
+];
+
+let medicalCurrentIndex = 0;
+
+const medicalGalleryImage = document.getElementById("gallery-image-medical");
+const medicalPrevButton = document.getElementById("prev-medical");
+const medicalNextButton = document.getElementById("next-medical");
+const medicalGalleryCaption = document.getElementById("gallery-caption-medical");
+
+// Function to update the displayed image for the medical gallery
+function updateMedicalImage(index) {
+  medicalGalleryImage.src = medicalImages[index];
+  medicalGalleryImage.alt = `Medical Reference Frame ${index + 1}`;
+  medicalGalleryCaption.textContent = `${index + 1} of ${medicalImages.length}`;
+}
+
+// Event listeners for medical gallery navigation buttons
+medicalPrevButton.addEventListener("click", () => {
+  medicalCurrentIndex = (medicalCurrentIndex - 1 + medicalImages.length) % medicalImages.length;
+  updateMedicalImage(medicalCurrentIndex);
+});
+
+medicalNextButton.addEventListener("click", () => {
+  medicalCurrentIndex = (medicalCurrentIndex + 1) % medicalImages.length;
+  updateMedicalImage(medicalCurrentIndex);
+});
+
+// Initialize the medical gallery
+updateMedicalImage(medicalCurrentIndex);

@@ -55,3 +55,20 @@ p {
   color: #333;
   font-family: Arial, sans-serif;
 }
+
+/* More Specific Styles for the Medical Reference Gallery */
+.gallery-container.medical-gallery {
+  display: flex; /* Ensure flex layout */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 500px; /* Adjust width specifically for this gallery */
+}
+
+.gallery-container.medical-gallery img {
+  max-width: 300%; /* Ensure image scales properly */
+  max-height: 800px; /* Specific height for medical gallery */
+  border: 3px solid #bbb; /* Slightly distinct border */
+  border-radius: 8px; /* Rounded corners */
+}
