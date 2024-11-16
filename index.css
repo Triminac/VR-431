@@ -72,3 +72,19 @@ p {
   border: 3px solid #bbb; /* Slightly distinct border */
   border-radius: 8px; /* Rounded corners */
 }
+
+.gantt-chart {
+  display: block; /* Ensures it's treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Adjusts the image width (80% of the container's width) */
+  height: auto; /* Maintains the aspect ratio */
+  border: 2px solid #ddd; /* Optional: adds a subtle border */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Adjust this value to control the size */
+  height: auto;
+}
