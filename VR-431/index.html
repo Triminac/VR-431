@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VR-431 Interim Assessment</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
+
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="stylesheet" href="./components/team-member/team-member.css">
+  <script type="module" src="./components/team-member/team-member.js"></script>
+
+  <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
+
+  <script type="module" src="./components/image/image-component.js"></script>
+
+  <script type="module" src="./components/video/video.js"></script>
+
+  <link rel="stylesheet" href="./components/references/references.css">
+
+  <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
+  <script src="./components/scroll-to-top/scroll-to-top.js"></script>
+
+  <script src="./components/table-component/table-component.js"></script>
+
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <div class="content">
+    <h1>VR-431 Quantifying the Impact of Virtual Reality on Problem-Solving Skills in Medical Education</h1>
+
+    <!-- This is the team member component use to display details about your team members -->
+    <div class="team-member-wrapper">
+      <team-member avatar="assets/Tristan.jpg" name="Tristan Tan" department="Mechanical Engineering"
+        year="2025"></team-member>
+      <team-member avatar="assets/KC.jpg" name="Kirsten Negapatan" department="Mechanical Engineering"
+        year="2025"></team-member>
+    </div>
+
+    <!-- This is a divide from the shoelace library for aesthetic purpose -->
+    <sl-divider></sl-divider>
+
+    <!-- This is the table-of-content component use to define all of the link directly to each section -->
+    <div class="table-of-content">
+      <h2>Table of Contents</h2>
+      <sl-tree>
+        <sl-tree-item expanded>
+          <a href="#section-header-1">1. Section Header 1</a>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-header-2">2. Section Header 1</a>
+          <sl-tree-item>
+            <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item>
+          <a href="#references">References</a>
+        </sl-tree-item>
+      </sl-tree>
+    </div>
+    <sl-divider></sl-divider>
+
+    <div>
+
+      <!-- This is an example of what a section might look like -->
+      <div id="section-header-1">
+        <h2> 1. Abstract </h2>
+        <p>
+          The integration of virtual reality (VR) in educational settings offers immense potential to enhance learning outcomes and student engagement. However, its quantifiable impact on cognitive skill development, such as problem-solving, remains underexplored. This research bridges a critical gap by providing empirical evidence on VR’s effectiveness in enhancing problem-solving skills within a medical education context. Using Polya’s Problem-Solving Framework, the study evaluates cognitive improvements in a high-stakes scenario—postpartum hemorrhage (PPH)—by comparing VR-based and traditional teaching methods. Results will pioneer a framework for assessing immersive technologies in education, advancing their application across critical domains.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-1">
+        <h3>1.1 Sub-section Header 1</h3>
+        <p>
+          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
+          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
+          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
+          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
+          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
+          fringilla
+          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
+          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
+          tempor
+          id eu nisl.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-2">
+        <h3>1.2 Sub-section Header 2</h3>
+        <p>
+          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
+          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
+          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
+          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
+          Nibh
+          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
+          elementum.
+        </p>
+
+        <!-- This is an example of how you might use the image component -->
+        <image-component tag="image" source="assets/requirement.png"
+          subtitle="Image 1: iDP suggested pathway"></image-component>
+      </div>
+    </div>
+
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-2">
+        <h2>2. Section Header 2</h2>
+        <p>
+          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
+          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
+          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
+          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
+          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
+          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
+          aliquam sem.
+        </p>
+      </div>
+
+      <div id="sub-section-2-header-1">
+        <h3>2.1. Sub-section Header 1</h3>
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          fames ac. <a href="#image">Link to the image above</a>
+        </p>
+
+        <!-- This is an example of how you might use the video component -->
+        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          subtitle="Video: Never gonna give you up?"></video-component>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h3>2.2. Sub-section Header 2</h3>
+        <p>
+          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
+          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
+          habitant
+          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
+          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
+          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        </p>
+
+        <!-- This is an example of how you might use the table component -->
+        <table-component subtitle="Table: Demo table">
+          <div id="table-1"></div>
+        </table-component>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-3">
+        <h2>3. Section Header 3</h2>
+        <p>
+          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
+          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
+          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
+          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
+          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
+          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
+          aliquam sem.
+        </p>
+      </div>
+
+      <div id="sub-section-3-header-1">
+        <h3>2.1. Sub-section Header 1</h3>
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          fames ac. <a href="#image">Link to the image above</a>
+        </p>
+
+        
+      </div>
+
+      <div id="sub-section-3-header-2">
+        <h3>2.2. Sub-section Header 2</h3>
+        <p>
+          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
+          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
+          habitant
+          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
+          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
+          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        </p>
+
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-4">
+        <h2>4. Section Header 4</h2>
+        <p>
+          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
+          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
+          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
+          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
+          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
+          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
+          aliquam sem.
+        </p>
+      </div>
+
+      <div id="sub-section-4-header-1">
+        <h3>4.1. Sub-section Header 1</h3>
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          fames ac. 
+        </p>
+        <p>
+          Below is an image gallery showcasing the storyboard for VR training in medical education.
+        </p>
+
+        <!-- Start of the Image Gallery -->
+        <div class="gallery-container">
+          <button id="prev" class="gallery-button">←</button>
+          <img id="gallery-image" src="../images/image1.png" alt="Storyboard Frame 1">
+          <button id="next" class="gallery-button">→</button>
+        </div>
+        <p id="gallery-caption" class="gallery-caption">Step 1 of 46</p>
+
+        <p>
+          Below are pages from the PRactical Obstetric Multi-Professional (PROMPT) Course and Trainer's Manual which was used as our reference for our storyboard.
+        </p>
+      </div>
+
+      <div id="sub-section-4-header-2">
+        <h3>2.2. Sub-section Header 2</h3>
+        <p>
+          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
+          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
+          habitant
+          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
+          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
+          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        </p>
+
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-5">
+        <h2>5. Section Header 5</h2>
+        <p>
+          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
+          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
+          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
+          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
+          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
+          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
+          aliquam sem.
+        </p>
+      </div>
+
+      <div id="sub-section-5-header-1">
+        <h3>5.1. Sub-section Header 1</h3>
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          fames ac. <a href="#image">Link to the image above</a>
+        </p>
+      </div>
+
+      <div id="sub-section-5-header-2">
+        <h3>2.2. Sub-section Header 2</h3>
+        <p>
+          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
+          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
+          habitant
+          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
+          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
+          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        </p>
+
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-6">
+        <h2>6. Section Header 6</h2>
+        <p>
+          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
+          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
+          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
+          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
+          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
+          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
+          aliquam sem.
+        </p>
+      </div>
+
+      <div id="sub-section-6-header-1">
+        <h3>6.1. Sub-section Header 1</h3>
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          fames ac. <a href="#image">Link to the image above</a>
+        </p>
+      </div>
+
+      <div id="sub-section-6-header-2">
+        <h3>2.2. Sub-section Header 2</h3>
+        <p>
+          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
+          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
+          habitant
+          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
+          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
+          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        </p>
+
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-7">
+        <h2>7. Contributions to Literature</h2>
+        <p>
+          This study advances VR research by addressing a critical gap in empirical data on its cognitive impact. Beyond engagement metrics, it quantifies VR’s effect on problem-solving, providing actionable insights for educators and policymakers. The results could inform scalable VR integrations in medical curricula, promoting evidence-based teaching practices.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-8">
+        <h2>8. Future Directions</h2>
+        <p>
+          This research lays the groundwork for expanding VR’s application across disciplines. Future studies could explore its impact on other cognitive domains, such as critical thinking and decision-making, or adapt the framework to fields like engineering and business. The development of standardized VR evaluation tools will further enhance its integration into diverse educational contexts.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <sl-divider></sl-divider>
+    <div>
+      <div id="section-header-9">
+        <h2>9. Conclusion</h2>
+        <p>
+          This study provides a rigorous framework for assessing VR’s impact on problem-solving skills in medical education. By comparing VR-based and traditional training methods using Polya’s Problem-Solving Framework, the research generates empirical evidence critical for advancing immersive technologies in education. The anticipated findings underscore VR’s transformative potential, paving the way for its broader adoption in training programs across high-stakes fields.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- This is an example of how you can use the references component to create references -->
+    <div id="references" class="references">
+      <sl-divider></sl-divider>
+      <h2>References</h2>
+      <ul>
+        <li>
+          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
+          http://www.dowjones.com/factiva/
+        </li>
+        <li>
+          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
+          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
+          39(5), 26-29.
+        </li>
+        <li>
+          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
+          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- This is the code to display the scroll to top button for ergonomic -->
+  <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
+  <!-- but it might reduce the user experience. -->
+  <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+    <sl-icon name="arrow-up" label="Settings"></sl-icon>
+  </sl-button>
+
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script type="module" src="./components/table-component/table-component.js"></script>
+  <script src="gallery.js"></script>
+
+</body>
+
+</html>
