@@ -16,3 +16,42 @@ p {
   text-align: justify;
   font-size: 1.1rem;
 }
+
+/* Gallery-specific styles */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.gallery-container img {
+  max-width: 120%;
+  max-height: 480px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.gallery-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.gallery-button:hover {
+  background-color: #0056b3;
+}
+
+.gallery-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
